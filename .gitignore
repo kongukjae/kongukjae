@@ -7,3 +7,5 @@
 .ssh/
 package.json
 .gitconfig
+.npm/
+.vim/
