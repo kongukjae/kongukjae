@@ -9,3 +9,4 @@ package.json
 .gitconfig
 .npm/
 .vim/
+myapp/node_modules/
