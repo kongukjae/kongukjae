@@ -1,0 +1,9 @@
+.nvm/
+.vscode-server/
+.bash_profile
+.vimrc
+.config/
+.bashrc
+.ssh/
+package.json
+.gitconfig
