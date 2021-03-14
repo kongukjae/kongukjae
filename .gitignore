@@ -5,8 +5,11 @@
 .config/
 .bashrc
 .ssh/
-package.json
+web/package.json
 .gitconfig
 .npm/
 .vim/
 myapp/node_modules/
+.cache/
+.pm2/
+.bash_history

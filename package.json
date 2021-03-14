@@ -1,0 +1,21 @@
+{
+  "name": "kongukjae",
+  "version": "0.0.1",
+  "description": "kongukjae_website",
+  "main": "app.js",
+  "scripts": {
+    "test": "test sign",
+    "start": "pm2 start ./myapp/bin/www",
+    "stop": "pm2 stop ./myapp/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongukjae/kongukjae.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kongukjae/kongukjae/issues"
+  },
+  "homepage": "https://github.com/kongukjae/kongukjae#readme"
+}
