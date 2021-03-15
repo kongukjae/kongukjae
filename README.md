@@ -5,3 +5,12 @@ npm install express-generator -g
 
 <!-- ESlint -->
 2021.03.15 : create new branch "lint"
+
+<!-- use to prettier -->
+npx prettier ./myapp/**/**/ --write
+
+<!-- eslint * prettier 연동하기 -->
+npm install eslint-config-prettier eslint-plugin-prettier
+
+<!-- lint 자동화 -->
+npm install husky : git hook
