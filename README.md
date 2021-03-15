@@ -14,3 +14,4 @@ npm install eslint-config-prettier eslint-plugin-prettier
 
 <!-- lint 자동화 -->
 npm install husky : git hook
+husky 작동에 문제 있음 해결해야 -> lint 자동화 가능
