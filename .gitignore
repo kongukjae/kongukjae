@@ -13,3 +13,4 @@ myapp/node_modules/
 .cache/
 .pm2/
 .bash_history
+node_modules
