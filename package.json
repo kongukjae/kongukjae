@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "webpack"
-  },
+		"build": "webpack"
+	},
   "name": "kongukjae",
   "version": "1.0.0",
   "description": "공욱재",
@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   }
 }
