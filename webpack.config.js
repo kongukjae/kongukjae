@@ -11,7 +11,7 @@ module.exports = {
    * 애플리케이션의 진입점
    * 이 key는 애플리케이션의 시작 파일을 설정.
    */
-  entry: './src/index.js',
+  entry: './src/index.jsx',
 
   output: {
     /**
@@ -77,7 +77,7 @@ module.exports = {
        * 주입 위치
        * 이 key는 스크립트가 HTML 파일의 어느 위치에 주입될지를 설정.
        */
-      inject: 'body',
+      inject: false,
     }),
   ],
 
