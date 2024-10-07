@@ -1,4 +1,5 @@
 /node_modules
-# /dist
+# /dist 주석 처리를 제거하여 dist 폴더를 Git에 포함시킵니다.
+/dist
 
 package-lock.json

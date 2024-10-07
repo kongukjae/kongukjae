@@ -30,7 +30,7 @@ module.exports = {
      * 공개 경로
      * 이 key는 애플리케이션이 제공될 경로를 설정.
      */
-    publicPath: '/',
+    publicPath: '/kongukjae/', // GitHub 프로젝트 이름으로 수정
   },
 
   module: {
