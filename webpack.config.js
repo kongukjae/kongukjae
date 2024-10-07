@@ -30,7 +30,7 @@ module.exports = {
      * 공개 경로
      * 이 key는 애플리케이션이 제공될 경로를 설정.
      */
-    publicPath: './',
+    publicPath: '/',
   },
 
   module: {
@@ -63,6 +63,7 @@ module.exports = {
        */
       template: './public/index.html',
       filename: 'index.html',
+      inject: 'body', // 스크립트를 body 끝에 주입
     }),
   ],
 
@@ -72,5 +73,6 @@ module.exports = {
     },
     hot: true,
     open: true,
+    historyApiFallback: true, // SPA에서 라우팅을 지원하기 위해 추가
   },
 };
