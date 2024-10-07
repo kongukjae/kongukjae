@@ -18,7 +18,7 @@ module.exports = {
      * 출력 파일 이름
      * 이 key는 생성될 번들 파일의 이름을 설정.
      */
-    filename: 'bundle.js',
+    filename: 'index.bundle.js',
 
     /**
      * 출력 경로
@@ -40,26 +40,19 @@ module.exports = {
          * 파일 테스트
          * 이 key는 어떤 파일을 처리할지를 설정.
          */
-        test: /\.jsx?$/,
-
-        /**
-         * 제외할 파일
-         * 이 key는 처리하지 않을 파일을 설정.
-         */
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-
-        use: {
-          /**
-           * 로더
-           * 이 key는 파일을 변환하는 데 사용할 로더를 설정.
-           */
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        },
+        use: ['babel-loader'],
       },
     ],
+  },
+
+  resolve: {
+    /**
+     * 확장자
+     * 이 key는 모듈을 가져올 때 사용할 파일 확장자를 설정.
+     */
+    extensions: ['*', '.js', '.jsx'],
   },
 
   plugins: [
@@ -69,20 +62,16 @@ module.exports = {
        * 이 key는 HTML 파일을 생성하는 데 사용할 템플릿을 설정.
        */
       template: './index.html',
-
-      /**
-       * 주입 위치
-       * 이 key는 스크립트가 HTML 파일의 어느 위치에 주입될지를 설정.
-       */
-      inject: 'body',
+      filename: '../index.html',
+      inject: false, // 이 옵션을 추가합니다.
     }),
   ],
 
-  resolve: {
-    /**
-     * 확장자
-     * 이 key는 모듈을 가져올 때 사용할 파일 확장자를 설정.
-     */
-    extensions: ['.js', '.jsx'],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, ''), // 이 부분을 변경했습니다.
+    },
+    hot: true,
+    open: true,
   },
 };

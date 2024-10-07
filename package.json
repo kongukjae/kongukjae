@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
     "start": "webpack serve --mode development",
     "watch": "webpack --watch --mode development"
   },
