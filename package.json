@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build": "webpack"
+  },
+  "name": "kongukjae",
+  "version": "1.0.0",
+  "description": "공욱재",
+  "main": "webpack.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
