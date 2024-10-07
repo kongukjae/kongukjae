@@ -1,6 +1,6 @@
 {
   "name": "kongukjae",
-	"description": "공욱재 프로젝트",
+  "description": "공욱재 프로젝트",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.3",
     "html-webpack-plugin": "^5.5.3",
+    "react-dev-utils": "^12.0.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
