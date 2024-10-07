@@ -5,7 +5,6 @@
 
 const path = require('path'); // 경로 관련 모듈을 가져옵니다.
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // HTML 파일을 생성하는 플러그인을 가져옵니다.
-const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
 
 module.exports = {
   /**
@@ -31,7 +30,7 @@ module.exports = {
      * 공개 경로
      * 이 key는 애플리케이션이 제공될 경로를 설정.
      */
-    publicPath: '/',
+    publicPath: './',
   },
 
   module: {
@@ -62,16 +61,14 @@ module.exports = {
        * 템플릿 파일
        * 이 key는 HTML 파일을 생성하는 데 사용할 템플릿을 설정.
        */
-      template: './index.html',
-      filename: '../index.html',
-      inject: true, // 이 옵션을 변경했습니다.
+      template: './public/index.html',
+      filename: 'index.html',
     }),
-    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/index.bundle/]),
   ],
 
   devServer: {
     static: {
-      directory: path.join(__dirname, ''), // 이 부분을 변경했습니다.
+      directory: path.join(__dirname, 'dist'),
     },
     hot: true,
     open: true,
