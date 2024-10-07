@@ -5,6 +5,7 @@
 
 const path = require('path'); // 경로 관련 모듈을 가져옵니다.
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // HTML 파일을 생성하는 플러그인을 가져옵니다.
+const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
 
 module.exports = {
   /**
@@ -63,8 +64,9 @@ module.exports = {
        */
       template: './index.html',
       filename: '../index.html',
-      inject: false, // 이 옵션을 추가합니다.
+      inject: true, // 이 옵션을 변경했습니다.
     }),
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/index.bundle/]),
   ],
 
   devServer: {
